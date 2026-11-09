@@ -14,8 +14,8 @@ public sealed class AboutWindow : Window
 
     public AboutWindow()
     {
-        Title = "About Image Converter";
-        Width = 500;
+        Title = "About FormatCraft [Bitmap]";
+        Width = 560;
         SizeToContent = SizeToContent.Height;
         ResizeMode = ResizeMode.NoResize;
         WindowStartupLocation = WindowStartupLocation.CenterOwner;
@@ -40,8 +40,8 @@ public sealed class AboutWindow : Window
         var titles = new StackPanel { VerticalAlignment = VerticalAlignment.Center };
         titles.Children.Add(new TextBlock
         {
-            Text = "Image Converter",
-            FontSize = 30,
+            Text = "FormatCraft [Bitmap]",
+            FontSize = 26,
             FontWeight = FontWeights.SemiBold,
             Foreground = (Brush)Application.Current.FindResource("NavyBrush")
         });

@@ -19,7 +19,7 @@ public static class TargetFormats
     /// <summary>Every format the app offers (the list shown is filtered to what the library can write).</summary>
     public static readonly IReadOnlyList<TargetFormat> All = new[]
     {
-        new TargetFormat("JPG", ".jpg", MagickFormat.Jpeg, HasQuality: true,  SupportsAlpha: false, DefaultQuality: 90),
+        new TargetFormat("JPG", ".jpg", MagickFormat.Jpeg, HasQuality: true,  SupportsAlpha: false, DefaultQuality: 100),
         new TargetFormat("PNG", ".png", MagickFormat.Png,  HasQuality: false, SupportsAlpha: true,  DefaultQuality: 100),
         new TargetFormat("WebP", ".webp", MagickFormat.WebP, HasQuality: true, SupportsAlpha: true, DefaultQuality: 85),
         new TargetFormat("TIFF", ".tif", MagickFormat.Tiff, HasQuality: false, SupportsAlpha: true, DefaultQuality: 100),

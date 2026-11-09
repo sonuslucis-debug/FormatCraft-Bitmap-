@@ -1,4 +1,4 @@
-# Sonus Lucis Image Converter
+# FormatCraft [Bitmap]
 
 A fast, standalone Windows program for converting bitmap images from one format to another. Drop in files or whole folders, pick a target format, and convert them all at once.
 
@@ -29,7 +29,7 @@ Windows 10 or 11, 64-bit.
 
 ## Building from source
 
-The project builds automatically on GitHub: upload it to a repository and the workflow in `.github/workflows/build.yml` produces `ImageConverter.exe` under **Actions**. To build it yourself, install the .NET 8 SDK and run:
+The project builds automatically on GitHub: upload it to a repository and the workflow in `.github/workflows/build.yml` produces `FormatCraftBitmap.exe` under **Actions**. To build it yourself, install the .NET 8 SDK and run:
 
 ```
 dotnet publish ImageConverter.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true

@@ -45,6 +45,15 @@ public partial class MainWindow : Window
             formats = TargetFormats.All;
             SetStatus("The image engine didn't start properly: " + ex.Message);
         }
+        try
+        {
+            SupportedText.Text = "Reads: " + SupportedFormats.Describe(MagickEngine.ReadableFormats());
+        }
+        catch
+        {
+            SupportedText.Text = "Reads: " + SupportedFormats.Fallback;
+        }
+
         FormatBox.ItemsSource = formats;
         FormatBox.SelectedIndex = 0;   // JPG
         if (StatusText.Text.Length == 0)

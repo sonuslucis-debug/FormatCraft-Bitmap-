@@ -6,16 +6,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <AssemblyName>ImageConverter</AssemblyName>
+    <AssemblyName>FormatCraftBitmap</AssemblyName>
     <RootNamespace>ImageConverter</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <ApplicationIcon>Images\app.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Resource Include="Fonts\Montserrat-Regular.ttf" />
     <Resource Include="Fonts\Montserrat-Bold.ttf" />
-    <Resource Include="Images\bard-bg.png" />
     <Resource Include="Images\logo.png" />
     <Resource Include="Images\app.ico" />
   </ItemGroup>

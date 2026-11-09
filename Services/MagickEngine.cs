@@ -26,6 +26,15 @@ public sealed class MagickEngine : IImageEngine
         }
     }
 
+    /// <summary>The formats this build of the library can actually read.</summary>
+    public static HashSet<MagickFormat> ReadableFormats()
+    {
+        var readable = new HashSet<MagickFormat>();
+        foreach (var info in MagickNET.SupportedFormats)
+            if (info.SupportsReading) readable.Add(info.Format);
+        return readable;
+    }
+
     /// <summary>The target formats this build of the library can actually write.</summary>
     public static IReadOnlyList<TargetFormat> AvailableTargets()
     {
